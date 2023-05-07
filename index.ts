@@ -11,7 +11,7 @@ client.on("ready", () => {
         const guilds = await api.getStats(APP_ID)
         client.setActivity({
             details: `Serving ${guilds.serverCount?.toLocaleString()} servers`,
-            state: `${bot.monthlyPoints} Mounthly votes`,
+            state: `${bot.monthlyPoints} Monthly votes`,
             startTimestamp: new Date(),
             largeImageKey:`https://cdn.discordapp.com/avatars/${APP_ID}/${bot.avatar}.png`,
             largeImageText: "Bannerfly",
